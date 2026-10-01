@@ -1,0 +1,42 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+.rojo{
+    color:red;
+}
+
+.navbar{
+    display:flex;
+    flex-direction: row;
+    border-bottom:1px gray solid;
+    align-items:center;
+    text-align:center;
+    gap:20px;
+    flex-wrap: wrap;
+}
+
+.navbar_Logo{
+    display:flex;
+    flex-direction: row;
+    text-align:center;
+    align-items:center;
+}
+
+.navbar_Logo img{
+    width:90px;
+    height:60px;
+    padding:10px;
+}
+
+.main{
+    display:flex;
+    flex-wrap: wrap;
+}

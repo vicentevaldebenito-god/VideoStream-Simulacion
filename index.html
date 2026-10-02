@@ -15,23 +15,35 @@
     <header class="header">
         <!-- Barra de navegacion -->
         <nav class="navbar">
-            <!-- Logo -->
-            <div class="navbar_Logo">
-                <img src="static/images/Logo.png" alt="Logo">
-                <h1>Video<span class="rojo">Stream</span></h1>
+            <!-- Primera division de la barra de navegacion -->
+            <div class="navbar_1">
+                <!-- Logo -->
+                <div class="navbar_Logo">
+                    <img src="static/images/Logo.png" alt="Logo">
+                    <h1>Video<span class="rojo">Stream</span></h1>
+                </div>
+                <!-- Links de navbar -->
+                <div class="navbar_Links">
+                    <a href="#"><span>Inicio</span></a>
+                    <a href="#"><span>Explorar</span></a>
+                    <a href="#"><span>Mi Lista</span></a>
+                </div>
             </div>
-            <!-- Links de navbar -->
-            <div class="navbar_Links">
-                <a href="#">Inicio</a>
-                <a href="#">Explorar</a>
-                <a href="#">Mi Lista</a>
+            <!-- Segunda division de la barra de navegacion -->
+            <div class="navbar_2">
+                <!-- Extras de la navbar -->
+                <div class="navbar_Extras">
+                    <div class="navbar_Extras_Buscador">
+                        <input type="text">
+                        <img src="static/images/Lupa.png" alt="Buscar">
+                    </div>
+                    <div class="navbar_Extras_Iconos">
+                        <img src="static/images/Noti.png" alt="Notificaciones">
+                        <img src="static/images/Usuario.png" alt="Usuario">
+                    </div>
+                </div>
             </div>
-            <!-- Extras de la navbar -->
-            <div class="navbar_Extras">
-                <input type="text">
-                <img>
-                <img>
-            </div>
+
         </nav>
     </header>
     <!-- Main -->
@@ -46,7 +58,31 @@
                 </video>
             </div>
             <div class="info_Video">
+                <div class="info_Video_Titulo">
+                    <h1>Lagos y montañas</h1>
+                    <p>95 mil visualizaciones ● 10 abr 2024</p>
+                </div>
+                <div class="info_Video_Extras">
+                    <div class="info_Video_Extras">
+                        <img src="static/images/MeGusta.png" alt="Me gusta">
+                        <p>4,8k</p>
+                        <img src="static/images/NoMeGusta.png" alt="No me gusta">
+                        <p>120</p>
+                        <img src="static/images/Compartir.png" alt="Compartir">
+                        <p>Compartir</p>
+                        <img src="static/images/Guardar.png" alt="Añadir">
+                        <p>Añadir a la cola</p>
+                    </div>
+                    <div class="info_Video_Extras_Canal">
+                        <img src="static/images/Logo.png" alt="Logo del canal">
+                        <div class="info_Video_Extras_Canal_Info">
+                            <h2>Canal de ejemplo</h2>
+                            <p>1.2M suscriptores</p>
+                        </div>
+                        <button>Suscribirse</button>
+                    </div>
 
+                </div>
             </div>
         </div>
         <!-- Div de la cola de los videos -->

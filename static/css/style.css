@@ -1,42 +1,159 @@
-*{
-    margin:0;
-    padding:0;
+/* Reseteo de CSS */
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    
-}
-body{
-    font-family:Arial, Helvetica, sans-serif;
 
 }
 
-.rojo{
-    color:red;
+/* Body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
-.navbar{
-    display:flex;
-    flex-direction: row;
-    border-bottom:1px gray solid;
-    align-items:center;
-    text-align:center;
-    gap:20px;
+/* Main */
+.main {
+    display: flex;
     flex-wrap: wrap;
 }
 
-.navbar_Logo{
-    display:flex;
+/* Cambiar texto a rojo */
+.rojo {
+    color: red;
+}
+
+/* Barra de navegacion */
+.navbar {
+    display: flex;
     flex-direction: row;
-    text-align:center;
-    align-items:center;
-}
-
-.navbar_Logo img{
-    width:90px;
-    height:60px;
-    padding:10px;
-}
-
-.main{
-    display:flex;
+    border-bottom: 1px gray solid;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+
+
+/* Primera parte de la barra de navegacion */
+.navbar_1 {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    gap: 25px;
+}
+
+/* Logo de la barra de navegacion */
+.navbar_Logo {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+
+
+
+/* Imagen del logo */
+.navbar_Logo img {
+    width: 90px;
+    height: 60px;
+    padding: 10px;
+}
+
+
+
+/* Div de los links de la barra de navegacion */
+.navbar_Links {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+/* Links de la barra de navegacion */
+.navbar_Links a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* Links de la barra de navegacion al pasar el mouse */
+.navbar_Links a:hover {
+    border-bottom: 2px black solid;
+
+}
+
+
+
+/* Links de la barra de navegacion */
+.navbar_Extras {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+
+/* Buscador de la barra de navegacion */
+.navbar_Extras_Buscador {
+    display: flex;
+    position: relative;
+    height: 25px;
+}
+
+
+
+/* Input del buscador de la barra de navegacion */
+.navbar_Extras_Buscador input {
+    border-radius: 5px;
+    border: 1px gray solid;
+}
+
+
+
+/* Imagenes de la barra de navegacion */
+.navbar_Extras img {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+/* Imagen de la lupa del buscador de la barra de navegacion */
+.navbar_Extras_Buscador img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 140px;
+    top: 3px;
+}
+
+
+
+/* Imagen de la lupa del buscador de la barra de navegacion */
+.navbar_Extras_Buscador img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 140px;
+    top: 3px;
+}
+
+.navbar_Extras_Iconos {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
 }

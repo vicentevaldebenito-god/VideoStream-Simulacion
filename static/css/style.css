@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 /* Body */
@@ -148,12 +147,93 @@ body {
     position: absolute;
     left: 140px;
     top: 3px;
+
 }
 
+/* Iconos de la navbar */
 .navbar_Extras_Iconos {
     display: flex;
     flex-direction: row;
     text-align: center;
     align-items: center;
     gap: 10px;
+}
+
+/* Div del video principal */
+.video_Principal {
+    display: flex;
+    width: 850px;
+    flex-direction: column;
+    padding:20px;
+}
+
+/* div del video*/
+.video {
+    width: 800px;
+    display: flex;
+}
+
+/* video principal */
+.video video {
+    width: 800px;
+}
+
+.info_Video {
+    display: flex;
+    flex-direction: column;
+}
+
+.info_Video_Titulo {
+    display: flex;
+    flex-direction: column;
+    border-bottom:1px gray solid;
+    padding:10px;
+}
+
+.info_Video_Extras {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap:20px;
+    padding:15px;
+    border-bottom:1px gray solid
+}
+
+.info_Video_Extras_Canal{
+    display:flex;
+    flex-direction: column;
+}
+
+.info_Video_Extras_Canal_Info{
+    display:flex;
+    flex-direction: row;
+    width:800px;
+    align-items: center;
+    padding:10px;
+    flex:1;
+}
+.info_Video_Extras_Canal_Titulo{
+    display:flex;
+    flex-direction: column;
+}
+.info_Video_Extras_Canal_Info img{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+}
+
+.info_Video_Extras_Canal_Desc{
+    display:flex;
+}
+
+.info_Video_Extra{
+    display:flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    gap:5px;
+}
+.info_Video_Extra img{
+    width:25px;
+    height:25px;
 }

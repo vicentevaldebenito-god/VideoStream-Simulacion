@@ -309,6 +309,12 @@ body {
     height: 90px;
 }
 
+.video_Miniatura video {
+    width: 120px;
+    height: 90px;
+}
+
+
 .video_Info {
     font-size: 10px;
     display: flex;

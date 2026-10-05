@@ -18,3 +18,16 @@ Subs_Button.addEventListener("click", function(){
     Subs.innerText = `(+1)`
     Subs_Button.innerText = `Suscrito`
 })
+
+const videos = document.querySelectorAll(".Video");
+
+
+videos.forEach(function(video) {
+    video.addEventListener("mouseover", function() {
+        video.play();
+    });
+
+    video.addEventListener("mouseout", function() {
+        video.pause();
+    });
+});

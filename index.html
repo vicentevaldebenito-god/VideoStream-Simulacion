@@ -82,20 +82,22 @@
                 </div>
                 <div class="info_Video_Extras_Canal">
                     <div class="info_Video_Extras_Canal_Info">
-                        <div class="Info_Video_Extras_Canal_Logo">
-                            <img src="static/images/png.png" alt="Logo del canal">
-                        </div>
-                        <div class="info_Video_Extras_Canal_Titulo">
-                            <h2>VideoStream</h2>
-                            <p>1.2M suscriptores</p>
+                        <div class="info_Video_Nombre_Info">
+                            <div class="Info_Video_Extras_Canal_Logo">
+                                <img src="static/images/png.png" alt="Logo del canal">
+                            </div>
+                            <div class="info_Video_Extras_Canal_Titulo">
+                                <h2>VideoStream</h2>
+                                <p>1.2M suscriptores</p>
+                            </div>
                         </div>
                         <div class="info_Video_Extras_Canal_Accion">
                             <button>Suscribirse</button>
                         </div>
                     </div>
-
                     <div class="info_Video_Extras_Canal_Desc">
-                        <p>Un recorrido por los lagos más hermosos de la Patagonia y aprende consejos, rutas y paisajes
+                        <p>Un recorrido por los lagos más hermosos de la Patagonia, recorrela con nosotros y aprende
+                            consejos, rutas y paisajes
                             imperdibles.</p>
                         <a href="#">Mostrar más</a>
                     </div>
@@ -106,19 +108,9 @@
         <div class="cola_Videos">
             <!-- parte de arriba de la cola de videos-->
             <div class="cola_1">
-                <h1>Siguiente en la cola</h1>
-                <button>Limpiar cola</button>
-                <!-- video de la cola de videos -->
-                <div class="video_Cola">
-                    <div class="video_Miniatura">
-                        <img src="static/images/png.png">
-                    </div>
-                    <!-- info del video -->
-                    <div class="video_Info">
-                        <h1>Explorando la Patagonia</h1>
-                        <p>VideoStream</p>
-                        <p>120 mil visualizaciones</p>
-                    </div>
+                <div class="cola_1_Titulo">
+                    <h1>Siguiente en la cola</h1>
+                    <button>Limpiar cola</button>
                 </div>
                 <!-- video de la cola de videos -->
                 <div class="video_Cola">
@@ -130,6 +122,9 @@
                         <h1>Explorando la Patagonia</h1>
                         <p>VideoStream</p>
                         <p>120 mil visualizaciones</p>
+                        <div class="video_Info_Quitar">
+                            <button>x</button>
+                        </div>
                     </div>
                 </div>
                 <!-- video de la cola de videos -->
@@ -139,56 +134,130 @@
                     </div>
                     <!-- info del video -->
                     <div class="video_Info">
-                        <h1>Explorando la Patagonia</h1>
+                        <h1>Comida Callejera</h1>
                         <p>VideoStream</p>
-                        <p>120 mil visualizaciones</p>
+                        <p>98 mil visualizaciones</p>
+                        <div class="video_Info_Quitar">
+                            <button>x</button>
+                        </div>
                     </div>
                 </div>
-                <div class="cola_2">
-                    <h1>Recomendados</h1>
-                    <!-- video de la cola de videos -->
-                    <div class="video_Cola">
-                        <div class="video_Miniatura">
-                            <img src="static/images/png.png">
-                        </div>
-                        <!-- info del video -->
-                        <div class="video_Info">
-                            <h1>Explorando la Patagonia</h1>
-                            <p>VideoStream</p>
-                            <p>120 mil visualizaciones</p>
-                        </div>
+                <!-- video de la cola de videos -->
+                <div class="video_Cola">
+                    <div class="video_Miniatura">
+                        <img src="static/images/png.png">
                     </div>
-                    <!-- video de la cola de videos -->
-                    <div class="video_Cola">
-                        <div class="video_Miniatura">
-                            <img src="static/images/png.png">
-                        </div>
-                        <!-- info del video -->
-                        <div class="video_Info">
-                            <h1>Explorando la Patagonia</h1>
-                            <p>VideoStream</p>
-                            <p>120 mil visualizaciones</p>
-                        </div>
-                    </div>
-                    <!-- video de la cola de videos -->
-                    <div class="video_Cola">
-                        <div class="video_Miniatura">
-                            <img src="static/images/png.png">
-                        </div>
-                        <!-- info del video -->
-                        <div class="video_Info">
-                            <h1>Explorando la Patagonia</h1>
-                            <p>VideoStream</p>
-                            <p>120 mil visualizaciones</p>
+                    <!-- info del video -->
+                    <div class="video_Info">
+                        <h1>Ciudades del mundo</h1>
+                        <p>VideoStream</p>
+                        <p>210 mil visualizaciones</p>
+                        <div class="video_Info_Quitar">
+                            <button>x</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Videos recomendados-->
-            <div class="videos_Recomendados">
-
+            <div class="cola_2">
+                <h1 class="cola_2_Titulo">Recomendados</h1>
+                <!-- video de la cola de videos -->
+                <div class="video_Cola">
+                    <div class="video_Miniatura">
+                        <img src="static/images/png.png">
+                    </div>
+                    <!-- info del video -->
+                    <div class="video_Info">
+                        <h1>Rutas de trekking</h1>
+                        <p>VideoStream</p>
+                        <p>80 mil visualizaciones</p>
+                        <div class="video_Info_Añadir">
+                            <button><img src="static/images/Save.jpg" alt="Añadir"></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- video de la cola de videos -->
+                <div class="video_Cola">
+                    <div class="video_Miniatura">
+                        <img src="static/images/png.png">
+                    </div>
+                    <!-- info del video -->
+                    <div class="video_Info">
+                        <h1>Fauna patagónica</h1>
+                        <p>VideoStream</p>
+                        <p>60 mil visualizaciones</p>
+                        <div class="video_Info_Añadir">
+                            <button><img src="static/images/Save.jpg" alt="Añadir"></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- video de la cola de videos -->
+                <div class="video_Cola">
+                    <div class="video_Miniatura">
+                        <img src="static/images/png.png">
+                    </div>
+                    <!-- info del video -->
+                    <div class="video_Info">
+                        <h1>Atardeceres increíbles</h1>
+                        <p>VideoStream</p>
+                        <p>120 mil visualizaciones</p>
+                        <div class="video_Info_Añadir">
+                            <button><img src="static/images/Save.jpg" alt="Añadir"></button>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+        <!-- Videos recomendados-->
+        <div class="videos_Extras">
+            <div class="videos_Extras_Imagen">
+                <img src="static/images/flecha.png">
+                <div class="videos_Extras_Titulo">
+                    <h1>Más videos</h1>
+                </div>
+            </div>
+            <div class="video_Extra">
+                <div class="video_Miniatura_2">
+                    <img src="static/images/png.png">
+                </div>
+                <!-- info del video -->
+                <div class="video_Info_Extra">
+                    <h1>Rutas de trekking</h1>
+                    <p>80 mil visualizaciones</p>
+                </div>
+            </div>
+            <div class="video_Extra">
+                <div class="video_Miniatura_2">
+                    <img src="static/images/png.png">
+                </div>
+                <!-- info del video -->
+                <div class="video_Info_Extra">
+                    <h1>Lagos y montañas</h1>
+                    <p>95 mil visualizaciones</p>
+                </div>
+            </div>
+            <div class="video_Extra">
+                <div class="video_Miniatura_2">
+                    <img src="static/images/png.png">
+                </div>
+                <!-- info del video -->
+                <div class="video_Info_Extra">
+                    <h1>Fauna patagónica</h1>
+                    <p>60 mil visualizaciones</p>
+                </div>
+            </div>
+            <div class="video_Extra">
+                <div class="video_Miniatura_2">
+                    <img src="static/images/png.png">
+                </div>
+                <!-- info del video -->
+                <div class="video_Info_Extra">
+                    <h1>Consejos para viajar</h1>
+                    <p>110 mil visualizaciones</p>
+                </div>
+            </div>
+        </div>
     </main>
+    <script src="static/js/script.js"></script>
 </body>
 
 </html>

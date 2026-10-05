@@ -72,6 +72,7 @@ body {
     text-align: center;
     align-items: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 
@@ -100,6 +101,8 @@ body {
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
+    padding: 5px;
+
 }
 
 
@@ -164,7 +167,8 @@ body {
     display: flex;
     width: 850px;
     flex-direction: column;
-    padding:20px;
+    padding: 20px;
+    flex-wrap: wrap;
 }
 
 /* div del video*/
@@ -181,59 +185,230 @@ body {
 .info_Video {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .info_Video_Titulo {
     display: flex;
     flex-direction: column;
-    border-bottom:1px gray solid;
-    padding:10px;
+    border-bottom: 1px gray solid;
+    padding: 10px;
 }
 
 .info_Video_Extras {
     display: flex;
     flex-direction: row;
     justify-content: end;
-    gap:20px;
-    padding:15px;
-    border-bottom:1px gray solid
+    gap: 20px;
+    padding: 15px;
+    border-bottom: 1px gray solid
 }
 
-.info_Video_Extras_Canal{
-    display:flex;
+.info_Video_Extras_Canal {
+    display: flex;
     flex-direction: column;
 }
 
-.info_Video_Extras_Canal_Info{
-    display:flex;
+.info_Video_Extras_Canal_Info {
+    display: flex;
     flex-direction: row;
-    width:800px;
+    width: 800px;
     align-items: center;
-    padding:10px;
-    flex:1;
+    padding: 10px;
+    flex: 1;
+    gap: 10px;
+    justify-content: space-between;
+    border-bottom: 1px gray solid;
 }
-.info_Video_Extras_Canal_Titulo{
-    display:flex;
+
+.info_Video_Extras_Canal_Titulo {
+    display: flex;
     flex-direction: column;
-}
-.info_Video_Extras_Canal_Info img{
-    width:60px;
-    height:60px;
-    border-radius:50%;
+    gap: 5px;
 }
 
-.info_Video_Extras_Canal_Desc{
-    display:flex;
+.info_Video_Extras_Canal_Info img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px black solid;
 }
 
-.info_Video_Extra{
-    display:flex;
+.info_Video_Nombre_Info {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.info_Video_Extras_Canal_Desc {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    border-bottom: 1px gray solid;
+}
+
+.info_Video_Extra {
+    display: flex;
     flex-direction: row;
     text-align: center;
     align-items: center;
-    gap:5px;
+    gap: 5px;
 }
-.info_Video_Extra img{
-    width:25px;
-    height:25px;
+
+.info_Video_Extra img {
+    width: 25px;
+    height: 25px;
+}
+
+
+.info_Video_Extras_Canal_Accion button {
+    color: white;
+    background-color: red;
+    width: 125px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cola_Videos {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 20px;
+}
+
+.cola_1 {
+    display: flex;
+    flex-direction: column
+}
+
+.cola_1_Titulo {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px gray solid;
+}
+
+.video_Cola {
+    display: flex;
+    flex-direction: row;
+    border: 1px gray solid;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.video_Miniatura img {
+    width: 120px;
+    height: 90px;
+}
+
+.video_Info {
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    max-width: 400px;
+    width: 300px;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.video_Info p {
+    font-size: 16px;
+    color: rgb(142, 144, 143);
+}
+
+.cola_2_Titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px gray solid;
+}
+
+.video_Info_Quitar {
+    position: absolute;
+    left: 270px;
+    top: 30px;
+}
+
+.video_Info_Quitar button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.video_Info_Añadir {
+    position: absolute;
+    left: 265px;
+    top: 30px;
+}
+
+.video_Info_Añadir button {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+}
+
+.video_Info_Añadir img {
+    width: 30px;
+    height: 30px;
+}
+
+.video_Info_Extra {
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.video_Info_Extra p {
+    font-size: 16px;
+    color: rgb(142, 144, 143);
+}
+
+.video_Extra {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.videos_Extras_Imagen img {
+    width: 50px;
+    height: 50px;
+}
+
+.video_Miniatura_2 img {
+    width: 220px;
+    height: 110px;
+}
+
+.videos_Extras {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.videos_Extras_Imagen{
+    position:relative;
+}
+.videos_Extras_Titulo {
+    display: flex;
+    position:absolute;
+    top:-100px;
+    width:200px;
+    left:10px;
 }

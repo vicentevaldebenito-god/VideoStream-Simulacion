@@ -201,7 +201,8 @@ body {
     justify-content: end;
     gap: 20px;
     padding: 15px;
-    border-bottom: 1px gray solid
+    border-bottom: 1px gray solid;
+    cursor:pointer;
 }
 
 .info_Video_Extras_Canal {
@@ -226,7 +227,9 @@ body {
     flex-direction: column;
     gap: 5px;
 }
-
+.info_Video_Extras_Canal_Titulo span{
+    color:green;
+}
 .info_Video_Extras_Canal_Info img {
     width: 60px;
     height: 60px;

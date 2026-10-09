@@ -1,423 +1,378 @@
-/* Reseteo de CSS */
+/* Resets basicos estilo wireframe */
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body */
-body {
     font-family: Arial, Helvetica, sans-serif;
-
 }
 
-/* Main */
+body {
+    background-color: #ffffff;
+    color: #222222;
+}
+
+/* Header superior */
+.header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #d3d3d3;
+    padding: 8px 16px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.navbar_1, .navbar_2, .navbar_Extras, .navbar_Extras_Iconos {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.navbar_Logo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.navbar_Logo img {
+    height: 22px;
+}
+
+.navbar_Logo h1 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.rojo {
+    color: #ff0000;
+}
+
+.navbar_Links {
+    display: flex;
+    gap: 14px;
+    margin-left: 10px;
+}
+
+.navbar_Links a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 13px;
+}
+
+/* Buscador simple */
+.navbar_Extras_Buscador {
+    display: flex;
+    align-items: center;
+    border: 1px solid #cccccc;
+    border-radius: 16px;
+    padding: 3px 10px;
+    background-color: #ffffff;
+}
+
+.navbar_Extras_Buscador input {
+    border: none;
+    outline: none;
+    font-size: 12px;
+    width: 130px;
+    background: transparent;
+}
+
+.navbar_Extras_Buscador img, .navbar_Extras_Iconos img {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.usuario_box {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.user_name {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Layout adaptable sin @media */
 .main {
     display: flex;
     flex-wrap: wrap;
-}
-
-/* Cambiar texto a rojo */
-.rojo {
-    color: red;
-}
-
-/* Barra de navegacion */
-.navbar {
-    display: flex;
-    flex-direction: row;
-    border-bottom: 1px gray solid;
-    align-items: center;
-    text-align: center;
     gap: 20px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 5px;
+    padding: 16px;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
+.contenido_Izquierda {
+    flex: 2 1 520px;
+    min-width: 0;
+}
 
-
-/* Primera parte de la barra de navegacion */
-.navbar_1 {
+.cola_Videos {
+    flex: 1 1 300px;
     display: flex;
-    flex-direction: row;
-    text-align: center;
-    align-items: center;
-    gap: 25px;
-}
-
-/* Logo de la barra de navegacion */
-.navbar_Logo {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    align-items: center;
-}
-
-
-
-/* Imagen del logo */
-.navbar_Logo img {
-    width: 90px;
-    height: 60px;
-    padding: 10px;
-}
-
-
-
-/* Div de los links de la barra de navegacion */
-.navbar_Links {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-
-
-/* Links de la barra de navegacion */
-.navbar_Links a {
-    text-decoration: none;
-    color: black;
-}
-
-
-
-/* Links de la barra de navegacion al pasar el mouse */
-.navbar_Links a:hover {
-    border-bottom: 2px black solid;
-
-}
-
-
-
-/* Links de la barra de navegacion */
-.navbar_Extras {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    padding: 5px;
-
-}
-
-
-
-/* Buscador de la barra de navegacion */
-.navbar_Extras_Buscador {
-    display: flex;
-    position: relative;
-    height: 25px;
-}
-
-
-
-/* Input del buscador de la barra de navegacion */
-.navbar_Extras_Buscador input {
-    border-radius: 5px;
-    border: 1px gray solid;
-}
-
-
-
-/* Imagenes de la barra de navegacion */
-.navbar_Extras img {
-    width: 30px;
-    height: 30px;
-}
-
-
-
-/* Imagen de la lupa del buscador de la barra de navegacion */
-.navbar_Extras_Buscador img {
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    left: 140px;
-    top: 3px;
-}
-
-
-
-/* Imagen de la lupa del buscador de la barra de navegacion */
-.navbar_Extras_Buscador img {
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    left: 140px;
-    top: 3px;
-
-}
-
-/* Iconos de la navbar */
-.navbar_Extras_Iconos {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    align-items: center;
-    gap: 10px;
-}
-
-/* Div del video principal */
-.video_Principal {
-    display: flex;
-    width: 850px;
     flex-direction: column;
-    padding: 20px;
-    flex-wrap: wrap;
+    gap: 24px;
 }
 
-/* div del video*/
+/* Video principal */
 .video {
-    width: 800px;
-    display: flex;
+    position: relative;
+    width: 100%;
+    background-color: #000000;
+    border-radius: 4px;
+    overflow: hidden;
 }
 
-/* video principal */
 .video video {
-    width: 800px;
+    width: 100%;
+    display: block;
 }
 
-.info_Video {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+.info_Video_Titulo h1 {
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
 }
 
-.info_Video_Titulo {
-    display: flex;
-    flex-direction: column;
-    border-bottom: 1px gray solid;
-    padding: 10px;
+.info_Video_Titulo p {
+    font-size: 12px;
+    color: #666666;
+    margin-top: 4px;
+    margin-bottom: 12px;
 }
 
+/* Botones alineados */
 .info_Video_Extras {
     display: flex;
-    flex-direction: row;
-    justify-content: end;
-    gap: 20px;
-    padding: 15px;
-    border-bottom: 1px gray solid;
-    cursor:pointer;
-}
-
-.info_Video_Extras_Canal {
-    display: flex;
-    flex-direction: column;
-}
-
-.info_Video_Extras_Canal_Info {
-    display: flex;
-    flex-direction: row;
-    width: 800px;
     align-items: center;
-    padding: 10px;
-    flex: 1;
-    gap: 10px;
-    justify-content: space-between;
-    border-bottom: 1px gray solid;
-}
-
-.info_Video_Extras_Canal_Titulo {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-.info_Video_Extras_Canal_Titulo span{
-    color:green;
-}
-.info_Video_Extras_Canal_Info img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: 1px black solid;
-}
-
-.info_Video_Nombre_Info {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-}
-
-.info_Video_Extras_Canal_Desc {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 15px;
-    border-bottom: 1px gray solid;
+    gap: 16px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 12px;
+    flex-wrap: wrap;
 }
 
 .info_Video_Extra {
     display: flex;
-    flex-direction: row;
-    text-align: center;
     align-items: center;
-    gap: 5px;
+    gap: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    color: #333333;
 }
 
 .info_Video_Extra img {
-    width: 25px;
-    height: 25px;
+    width: 16px;
+    height: 16px;
 }
 
+/* Canal info */
+.info_Video_Extras_Canal {
+    padding: 14px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
 
-.info_Video_Extras_Canal_Accion button {
-    color: white;
-    background-color: red;
-    width: 125px;
-    height: 35px;
+.info_Video_Extras_Canal_Info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info_Video_Nombre_Info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.Info_Video_Extras_Canal_Logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #cccccc;
+}
+
+.info_Video_Extras_Canal_Titulo h2 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.info_Video_Extras_Canal_Titulo p {
+    font-size: 12px;
+    color: #666666;
+}
+
+#Subs_Button {
+    background-color: #ff0000;
+    color: #ffffff;
     border: none;
-    border-radius: 5px;
+    padding: 6px 14px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 2px;
     cursor: pointer;
 }
 
-.cola_Videos {
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    gap: 20px;
+#Subs_Button.suscrito {
+    background-color: #e0e0e0;
+    color: #333333;
 }
 
-.cola_1 {
+.info_Video_Extras_Canal_Desc {
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 1.4;
+    color: #444444;
+}
+
+.info_Video_Extras_Canal_Desc a {
+    color: #0055cc;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 4px;
+}
+
+/* Mas videos abajo */
+.videos_Extras {
+    margin-top: 20px;
+}
+
+.videos_Extras_Titulo h1 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.videos_Extras_Grid {
     display: flex;
-    flex-direction: column
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.video_Extra {
+    flex: 1 1 130px;
+    cursor: pointer;
+}
+
+.video_Miniatura_2, .video_Miniatura {
+    position: relative;
+    width: 100%;
+}
+
+.video_Miniatura_2 video, .video_Miniatura video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-color: #888888;
+    border-radius: 3px;
+    display: block;
+    object-fit: cover;
+}
+
+/* Marca de tiempo fija sobre la miniatura como wireframe */
+.video_Miniatura_2::after, .video_Miniatura::after {
+    content: "4:32";
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    font-size: 10px;
+    padding: 1px 4px;
+    border-radius: 2px;
+    pointer-events: none;
+}
+
+.video_Info_Extra h1, .video_Info h1 {
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 4px;
+}
+
+.video_Info_Extra p, .video_Info p {
+    font-size: 11px;
+    color: #666666;
+}
+
+/* Columna Lateral */
+.cola_1, .cola_2 {
+    background-color: #ffffff;
 }
 
 .cola_1_Titulo {
     display: flex;
-    flex-direction: row;
-    font-size: 12px;
     justify-content: space-between;
-    padding: 10px;
-    border: 1px gray solid;
+    align-items: center;
+    margin-bottom: 12px;
 }
 
-.video_Cola {
-    display: flex;
-    flex-direction: row;
-    border: 1px gray solid;
-    padding: 10px;
-    flex-wrap: wrap;
-}
-
-.video_Miniatura img {
-    width: 120px;
-    height: 90px;
-}
-
-.video_Miniatura video {
-    width: 120px;
-    height: 90px;
-}
-
-
-.video_Info {
-    font-size: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    padding: 10px;
-    max-width: 400px;
-    width: 300px;
-    position: relative;
-    flex-wrap: wrap;
-}
-
-.video_Info p {
-    font-size: 16px;
-    color: rgb(142, 144, 143);
+.cola_1_Titulo h1, .cola_2_Titulo {
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .cola_2_Titulo {
+    margin-bottom: 12px;
+}
+
+.cola_1_Titulo button {
+    background: none;
+    border: 1px solid #cccccc;
+    padding: 2px 6px;
+    font-size: 11px;
+    color: #444444;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+/* Fila de video de cola con posicionamiento de botones al lado */
+.video_Cola {
+    position: relative; /* Clave para el position absolute del botón */
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px;
-    border: 1px gray solid;
+    gap: 10px;
+    margin-bottom: 14px;
+    padding-right: 28px; /* Espacio reservado para los botones + y X */
+    align-items: flex-start;
 }
 
-.video_Info_Quitar {
-    position: absolute;
-    left: 270px;
-    top: 30px;
+.video_Miniatura {
+    width: 90px;
+    flex-shrink: 0;
 }
 
-.video_Info_Quitar button {
-    width: 30px;
-    height: 30px;
-    border: none;
-    background-color: white;
-    cursor: pointer;
-    font-size: 30px;
-}
-
-.video_Info_Añadir {
-    position: absolute;
-    left: 265px;
-    top: 30px;
-}
-
-.video_Info_Añadir button {
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    background-color: white;
-    border: none;
-}
-
-.video_Info_Añadir img {
-    width: 30px;
-    height: 30px;
-}
-
-.video_Info_Extra {
-    font-size: 10px;
+.video_Info {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    justify-content: center;
 }
 
-.video_Info_Extra p {
-    font-size: 16px;
-    color: rgb(142, 144, 143);
+/* Posicionar botones + y X alineados a la derecha */
+.video_Info_Quitar, .video_Info_Añadir {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-.video_Extra {
+.btn-quitar, .btn-añadir {
+    background: transparent;
+    border: 1px solid #aaaaaa;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 2px;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.videos_Extras_Imagen img {
-    width: 50px;
-    height: 50px;
-}
-
-.video_Miniatura_2 img {
-    width: 220px;
-    height: 110px;
-}
-
-.videos_Extras {
-    display: flex;
-    flex-direction: row;
-    padding: 20px;
-    gap: 20px;
     align-items: center;
-    flex-wrap: wrap;
+    justify-content: center;
+    color: #333333;
 }
 
-.videos_Extras_Imagen{
-    position:relative;
-}
-.videos_Extras_Titulo {
-    display: flex;
-    position:absolute;
-    top:-100px;
-    width:200px;
-    left:10px;
+.btn-quitar:hover, .btn-añadir:hover {
+    background-color: #eeeeee;
 }
